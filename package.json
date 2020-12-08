@@ -1,0 +1,16 @@
+{
+  "name": "tenx",
+  "license": "UNLICENSED",
+  "scripts": {
+    "codegen": "graph codegen",
+    "build": "graph build",
+    "deploy": "graph deploy --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ disuai/tenx",
+    "create-local": "graph create --node http://localhost:8020/ disuai/tenx",
+    "remove-local": "graph remove --node http://localhost:8020/ disuai/tenx",
+    "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 disuai/tenx"
+  },
+  "dependencies": {
+    "@graphprotocol/graph-cli": "0.19.0",
+    "@graphprotocol/graph-ts": "0.19.0"
+  }
+}

@@ -1,0 +1,20 @@
+type ExampleEntity @entity {
+  id: ID!
+  count: BigInt!
+  to: Bytes! # address
+  value: BigInt! # uint256
+}
+enum CurrencyType {
+    ETH
+    BTC
+    TWOKEY
+    NIS
+    JPY
+    EUR
+    USD
+    ILS
+    DAI
+    TUSD
+    GBP
+    USDT
+}
